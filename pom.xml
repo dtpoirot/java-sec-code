@@ -15,7 +15,6 @@
         <tomcat.version>8.5.85</tomcat.version>
     </properties>
 
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -28,21 +27,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-
-        <!-- 添加thymeleaf为了动态解析html-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- 处理jdbc的mysql连接-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.12</version>
         </dependency>
 
-        <!-- 处理json数据 -->
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -50,8 +45,6 @@
             <version>1.2.24</version>
         </dependency>
 
-
-        <!-- jdom解析xml 最新版本为2.0.6 时间为2015-02-28 https://github.com/hunterhacker/jdom/releases-->
         <!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
         <dependency>
             <groupId>org.jdom</groupId>
@@ -66,8 +59,6 @@
             <version>2.1.0</version>
         </dependency>
 
-
-        <!-- 获取url根域名-->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -97,7 +88,6 @@
             <version>4.3.6</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -116,21 +106,18 @@
             <version>2.5.0</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-digester3</artifactId>
             <version>3.2</version>
         </dependency>
 
-        <!-- SpringBoot Actuator命令执行的库 -->
         <dependency>
             <groupId>org.jolokia</groupId>
             <artifactId>jolokia-core</artifactId>
             <version>1.6.0</version>
         </dependency>
 
-        <!-- 添加SpringBoot Actuator-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -143,14 +130,12 @@
             <version>1.4.0.RELEASE</version>
         </dependency>
 
-        <!-- 生成uuid -->
         <dependency>
             <groupId>com.fasterxml.uuid</groupId>
             <artifactId>java-uuid-generator</artifactId>
             <version>3.1.4</version>
         </dependency>
 
-        <!-- 5.x的spring-security版本不适配springboot 1.5，因为1.5的springboot的spring-core版本是4.x，所以spring-security改为4.x即可适配。 -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
@@ -181,7 +166,6 @@
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
         </dependency>
-
 
         <!-- mybatis -->
         <dependency>
@@ -367,6 +351,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
